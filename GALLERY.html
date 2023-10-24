@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/GALLERY.CSS">
+    <script src="./JAVASCRIPT/GALLERY.JS" defer></script>
+</head>
+<body>
+    <h1 id="galleryheading">MY GALLERY</h1>
+    <div id="imagescontainer">
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+        <img id="imagesinconatiner" onmousedown="passSrc(this.src)" >
+    </div>
+    <div id="imageeditselection">
+        <div id="closebutton" onmousedown="closeselectphoto()">X</div>
+        <div id="imageselectedcontainer">
+            <img id="imageselected" src="">
+        </div>
+        <div id="editbutton" onmousedown="editwindowopen()">EDIT IMAGE</div>
+    </div>
+    <div id="editwindow">
+        <div id="imagecontainer">
+            <img id="image" src="./ASSET/IMAGES/0.jpg" alt="">
+        </div>
+        <div id="editor">
+            <div id="imagefilter">
+                <h2>Image Filter</h2>
+                <div class="imagefilter">
+                    <label for="blur">Blur</label>
+                    <input type="range" min="0" max="300"  value="0" id="blur" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="brightness">Brightness</label>
+                    <input type="range" min="0" max="200" value="100" id="brightness" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="contrast">Contrast</label>
+                    <input type="range" min="0" max="500" value="100" id="contrast" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" min="0"  max="100" value="1" id="grayscale" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="hue">Hue-rotate</label>
+                    <input type="range" min="0" max="360" value="0" id="hue" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="invert">Invert</label>
+                    <input type="range" min="0"  max="100" value="0" id="invert" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="opacity">Opacity</label>
+                    <input type="range" min="0"  max="100" value="100" id="opacity" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="saturate">Saturate</label>
+                    <input type="range" min="0"  max="100" value="100" id="saturate" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="sepia">Sepia</label>
+                    <input type="range" min="0" max="100" value="0" id="sepia" oninput="imageEdit()">
+                </div>
+            </div>
+            <div id="transformimage">
+                <h2>transform image</h2>
+                <div class="imagefilter">
+                    <label for="">Rotate-x</label>
+                    <input type="range" min="0" max="360" value="0" id="Rotx" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="">Rotate-y</label>
+                    <input type="range" min="0"  max="360" value="0" id="Roty" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="">Rotate-z</label>
+                    <input type="range" min="0" max="360"value="0" id="Rotz" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="">Scale-x</label>
+                    <input type="range" min="0" max="3"  value="1" id="Scalex" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="">Scale-y</label>
+                    <input type="range" min="0" max="3"  value="1"id="Scaley" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="">Skew-x</label>
+                    <input type="range" min="0"  max="360"  value="0" id="Skewx" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="">Skew-y</label>
+                    <input type="range" min="0"  max="360" value="0" id="Skewy" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="">Translate-x</label>
+                    <input type="range" min="0"  max="360" value="0" id="Translatex" oninput="imageEdit()">
+                </div>
+                <div class="imagefilter">
+                    <label for="">Translate-y</label>
+                    <input type="range" min="0" max="360" value="0" id="Translatey" oninput="imageEdit()">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
